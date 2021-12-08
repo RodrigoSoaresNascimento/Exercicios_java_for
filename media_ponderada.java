@@ -11,6 +11,7 @@ public class media_ponderada {
         int N = entrada.nextInt();
         int i;
         double nota1, nota2, nota3, mediaP;
+        
         for(i=0; i < N; i++){
             System.out.println("Quantos casos voce vai digitar? ");
             nota1 = entrada.nextDouble();
@@ -20,17 +21,5 @@ public class media_ponderada {
             System.out.println("Media =" + mediaP);
         }
         entrada.close();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
     }
 }

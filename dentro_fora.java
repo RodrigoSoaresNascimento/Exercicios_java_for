@@ -1,6 +1,9 @@
 import java.util.Scanner;
 public class dentro_fora {
     public static void main(String[]agrs){
+        /*Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X que serão lidos em seguida. 
+        Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos estão fora do intervalo.*/
+        
         Scanner entrada = new Scanner(System.in);
         System.out.println("Quantos numeros voce vai digitar? ");
         int N = entrada.nextInt();

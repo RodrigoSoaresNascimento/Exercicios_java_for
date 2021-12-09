@@ -20,7 +20,6 @@ public class divisao {
             }
             
         }
-        
         entrada.close();
         
         

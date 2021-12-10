@@ -4,7 +4,7 @@ public class Fatorial{
         Scanner entrada = new Scanner(System.in);
         boolean continuacao = true;
         
-        int i; int multiplicacao = 1;
+        int i; int multiplicacao;
         int numero;
         
         while(continuacao){

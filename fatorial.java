@@ -1,34 +1,32 @@
 import java.util.Scanner;
-public class fatorial{
+public class Fatorial{
     public static void main(String[]agrs){
-        int i; int multiplicacao = 1;
-        int resposta;
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Digite o valor de N: ");
-        int N = entrada.nextInt();
+        boolean continuacao = true;
         
-        for(i = 1; i < N; N--){
-            multiplicacao = multiplicacao * N;
+        int i; int multiplicacao = 1;
+        int numero;
+        
+        while(continuacao){
             
-        }
-        System.out.println("FATORIAL = " + multiplicacao);
-        
-        System.out.println("Deseja continuar? [ 1 para Sim ou  2 para Não] ");
-        resposta = entrada.nextInt();
-        
-        while(resposta == 1){
             System.out.println("Digite o valor de N: ");
-            N = entrada.nextInt();
+            numero = entrada.nextInt();
             multiplicacao = 1;
-            for(i = 1; i < N; N--){
-            multiplicacao = multiplicacao * N;
+            for(i = 1; i < numero; numero--){
+                multiplicacao = multiplicacao * numero;
             }
             System.out.println("FATORIAL = " + multiplicacao);
             System.out.println("Deseja continuar? [1 para Sim / 2 para Não] ");
-            resposta = entrada.nextInt();
+            int resposta = entrada.nextInt();
+            if(resposta == 2){
+                continuacao = false;
+            }
             
         }
         entrada.close();
-       
+
+
+
+        
     }
 }

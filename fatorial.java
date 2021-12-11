@@ -12,8 +12,8 @@ public class Fatorial{
             System.out.println("Digite o valor de N: ");
             numero = entrada.nextInt();
             multiplicacao = 1;
-            for(i = 1; i < numero; numero--){
-                multiplicacao = multiplicacao * numero;
+            for(i = 1; i <= numero; i++){
+                multiplicacao *=  i;
             }
             System.out.println("FATORIAL = " + multiplicacao);
             System.out.println("Deseja continuar? [1 para Sim / 2 para Não] ");
